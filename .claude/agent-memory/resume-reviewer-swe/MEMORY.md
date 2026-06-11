@@ -1,0 +1,3 @@
+- [Soojin Jung Candidate Profile](user_soojin_profile.md) — 3yr frontend engineer, fintech/AI, targeting fullstack/backend transition, career gap May 2025–present
+- [Resume Review June 2026](project_resume_review_jun2026.md) — Full 10-step review findings, scores, top issues, and high-ROI actions for Soojin's bilingual resume
+- [Korean Frontend→Fullstack Resume Patterns](reference_resume_patterns.md) — Institutional patterns: self-deprecation, metric inflation, English sync gaps, ATS issues, keyword list

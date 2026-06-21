@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soojin Jung — CV</title>
+    <link rel="alternate" hreflang="en" href="cv.html" />
+    <link rel="alternate" hreflang="ko" href="cv-ko.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/cv.css" />
@@ -23,159 +21,160 @@
   <body>
     <div class="cv-container">
       <div class="cv-top-bar">
-        <a class="back-link" href="index.html"
-          >&larr; <span data-lang-en>Back to profile</span
-          ><span data-lang-ko>프로필로 돌아가기</span></a
-        >
+        <a class="back-link" href="index.html">&larr; Back to profile</a>
         <div class="top-bar-actions">
-          <a
-            class="btn-pill btn-link"
-            href="portfolio.html"
-            data-lang-ko
-            aria-label="포트폴리오로 이동"
-          >
-            포트폴리오 &rarr;
-          </a>
           <button
             class="btn-pill"
             onclick="downloadPdf()"
             aria-label="Download PDF"
           >
-            <span data-lang-en>PDF</span><span data-lang-ko>PDF</span> &darr;
+            PDF &darr;
           </button>
-          <button
+          <a
             class="btn-pill"
-            onclick="toggleLang()"
-            aria-label="Toggle language"
+            href="cv-ko.html"
+            aria-label="View Korean version"
           >
-            <span data-lang-en>KO</span><span data-lang-ko>EN</span>
-          </button>
+            KO
+          </a>
         </div>
       </div>
 
       <!-- Header -->
       <header class="cv-header">
-        <h1>
-          <span data-lang-en>Soojin Jung</span><span data-lang-ko>정수진</span>
-        </h1>
-        <p class="title">
-          <span data-lang-en>Software Engineer</span
-          ><span data-lang-ko>소프트웨어 엔지니어</span>
-        </p>
+        <h1>Soojin Jung</h1>
+        <p class="title">Software Engineer</p>
         <div class="contact">
           <span>sojjung3@gmail.com</span>
           <span class="dot">·</span>
-          <span
-            ><a
-              href="https://www.linkedin.com/in/soo-jin-jung"
-              target="_blank"
-              data-lang-en
-              >linkedin.com/in/soo-jin-jung</a
-            ><span data-lang-ko>010-3724-6480</span></span
+          <a href="https://www.linkedin.com/in/soo-jin-jung" target="_blank"
+            >linkedin.com/in/soo-jin-jung</a
           >
+          <span class="dot">·</span>
           <a href="https://github.com/soojjung" target="_blank"
             >github.com/soojjung</a
           >
           <span class="dot">·</span>
+
           <a href="https://medium.com/@sojjung3" target="_blank"
             >medium.com/@sojjung3</a
           >
         </div>
       </header>
 
-      <!-- About -->
+      <!-- Summary -->
       <section class="cv-section cv-section-about">
-        <h2><span data-lang-en>About</span><span data-lang-ko>소개</span></h2>
+        <h2>Summary</h2>
         <p class="about-text">
-          <span data-lang-en
-            >3+ years of frontend experience building production web apps in
-            fintech and AI. Led data-driven product decisions via GA4/Mixpanel
-            and established code conventions and review processes that
-            measurably improved quality. Recently expanded into backend and AI
-            engineering — Spring Boot REST APIs, JPA/MySQL, RAG pipelines — to
-            deliver end-to-end solutions. Actively integrating AI into the
-            development workflow through project-wide context systems and custom
-            automation, leveraging AI as a design review partner rather than a
-            mere code generation tool.</span
-          >
-          <span data-lang-ko
-            >핀테크 및 AI 분야에서 3년의 프론트엔드 개발 경험을 바탕으로
-            프로덕션급 웹 애플리케이션을 구축해 왔습니다. 확장 가능한 컴포넌트
-            시스템 설계와 복잡한 백엔드/AI 서비스를 직관적인 사용자 인터페이스로
-            통합하는 데 강점이 있습니다. GA4/Mixpanel 분석을 통한 데이터 기반
-            의사결정과 코드 컨벤션 문서화·코드 리뷰 프로세스 도입으로 팀의
-            품질을 개선한 경험이 있습니다.<br />최근에는 백엔드 개발 및 AI 모델
-            서빙·연동으로 영역을 확장하여 Spring Boot · JPA/MySQL · FastAPI 기반
-            REST API 설계, 주문 상태 머신과 낙관적 잠금, EntityGraph 기반 N+1
-            최적화, OpenAI + ChromaDB 기반 RAG 파이프라인을 통한 AI 모델 서비스
-            연동 등을 직접 구현해 왔습니다. 또한 개발 워크플로우 전반에 AI를
-            적극적으로 통합하여, 프로젝트 전반의 컨텍스트 시스템과 커스텀 자동화
-            커맨드를 구축함으로써 AI를 단순 코드 생성 도구가 아닌 설계 검토
-            파트너로 활용하고 있습니다.<br />비록 지금까지의 경력은 프론트엔드
-            중심이지만, 궁극적으로는 화면 너머의 데이터 흐름·도메인
-            모델·인프라까지 서비스 전체를 조망하며 설계할 수 있는 풀스택
-            엔지니어로 성장하고자 합니다. 프론트부터 백엔드까지 제품의 모든
-            레이어를 책임지고 다룰 때 비로소 좋은 서비스가 만들어진다고 믿으며,
-            그러한 환경에서 깊이 있게 기여하며 성장해 나가고 싶다는 강한 열망을
-            가지고 있습니다.</span
-          >
+          M.S. student at New York University and frontend engineer with 3+
+          years of experience building production-grade web and mobile
+          applications using React, TypeScript, TanStack Query, Zustand, and
+          modern API-driven architectures. Experienced in AI-powered product
+          development, RAG pipelines, real-time streaming interfaces, and
+          production monitoring. Seeking software engineering internship
+          opportunities in frontend, full-stack, AI platform, and MLOps frontend
+          roles.
         </p>
+      </section>
+
+      <!-- Education -->
+      <section class="cv-section cv-section-education">
+        <h2>Education</h2>
+
+        <div class="timeline-item">
+          <h3>M.S. in Computer Engineering (AI Robotics Track)</h3>
+          <p class="company">New York University</p>
+          <p class="period">Sep 2026 — Present</p>
+          <ul class="description">
+            <li>
+              Focus: AI systems, robotics, machine learning, and human-centered
+              AI interfaces.
+            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>BSc. in Applied Mathematics and Statistics &amp; Economics</h3>
+          <p class="company">
+            Stony Brook, State University of New York — GPA 3.57 / 4.0
+          </p>
+          <p class="period">Graduated Dec 2018</p>
+          <ul class="description">
+            <li>
+              Relevant Coursework: Intro to Computers, Finite Mathematical
+              Structures, Linear Algebra, Probability Theory, Survey of
+              Probability and Statistics, Econometrics, Operations Research.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Skills -->
       <section class="cv-section cv-section-skills">
-        <h2>
-          <span data-lang-en>Skills</span><span data-lang-ko>기술 스택</span>
-        </h2>
+        <h2>Skills</h2>
         <div class="skills-list">
           <div class="skill-row">
-            <h3>
-              <span data-lang-en>Frontend</span
-              ><span data-lang-ko>프론트엔드</span>
-            </h3>
+            <h3>AI / LLM Systems</h3>
             <div class="skill-tags">
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Next.js</span>
-              <span class="skill-tag">Zustand</span>
-              <span class="skill-tag">TanStack Query</span>
-              <span class="skill-tag">Tailwind CSS</span>
-            </div>
-          </div>
-          <div class="skill-row">
-            <h3>
-              <span data-lang-en>Backend &amp; Infra</span
-              ><span data-lang-ko>백엔드 &amp; 인프라</span>
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Spring Boot</span>
-              <span class="skill-tag">FastAPI</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">Supabase</span>
-              <span class="skill-tag">Docker</span>
-            </div>
-          </div>
-          <div class="skill-row">
-            <h3>AI / ML</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">RAG pipelines</span>
               <span class="skill-tag">LangChain</span>
               <span class="skill-tag">ChromaDB</span>
-              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">Fallback orchestration</span>
             </div>
           </div>
           <div class="skill-row">
-            <h3>Tools</h3>
+            <h3>Real-time &amp; Data Interfaces</h3>
             <div class="skill-tags">
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">SSE</span>
+              <span class="skill-tag">Whisper</span>
+              <span class="skill-tag">Streaming UI</span>
+              <span class="skill-tag">Dashboard UI</span>
+              <span class="skill-tag">API-driven workflows</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Reliability &amp; Analytics</h3>
+            <div class="skill-tags">
               <span class="skill-tag">Sentry</span>
-              <span class="skill-tag">Google Analytics</span>
+              <span class="skill-tag">Production monitoring</span>
+              <span class="skill-tag">Incident response</span>
+              <span class="skill-tag">GA4</span>
+              <span class="skill-tag">Mixpanel</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TanStack Query</span>
+              <span class="skill-tag">Zustand</span>
+              <span class="skill-tag">Tailwind</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Backend / Data</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Supabase</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Infrastructure / Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Vercel</span>
               <span class="skill-tag">GitHub Actions</span>
-              <span class="skill-tag">Claude Code</span>
+
+              <span class="skill-tag">Capacitor</span>
+              <span class="skill-tag">App Store Release</span>
             </div>
           </div>
         </div>
@@ -183,81 +182,39 @@
 
       <!-- Work Experience -->
       <section class="cv-section cv-section-experience">
-        <h2>
-          <span data-lang-en>Work Experience (3 yrs)</span
-          ><span data-lang-ko>경력 (3년)</span>
-        </h2>
+        <h2>Work Experience (3 yrs)</h2>
 
         <div class="timeline-item">
-          <h3>
-            <span data-lang-en>Frontend Developer</span
-            ><span data-lang-ko>프론트엔드 개발자</span>
-          </h3>
+          <h3>Frontend Developer</h3>
           <p class="company">BeHappy</p>
-          <p class="period">
-            <span data-lang-en>Oct 2024 — May 2025 (8 mos)</span
-            ><span data-lang-ko>2024년 10월 — 2025년 5월 (8개월)</span>
-          </p>
+          <p class="period">Oct 2024 — May 2025 (8 mos) · Korea</p>
           <ul class="description">
             <li class="parent-item">
-              <span data-lang-en
-                >Built an AI-powered mobile finance service that generates
-                long-term financial roadmaps for newlyweds via interactive
-                chatbot onboarding.</span
-              >
-              <span data-lang-ko
-                >인터랙티브 챗봇 온보딩을 통해 신혼부부 맞춤 장기 재무 로드맵을
-                생성하는 AI 모바일 금융 서비스 구축</span
-              >
+              Built an AI-powered mobile finance service that generates
+              long-term financial roadmaps for newlyweds via interactive chatbot
+              onboarding.
             </li>
             <li>
-              <span data-lang-en
-                >Integrated a low-latency (&lt;500ms) streaming infrastructure
-                using SSE and OpenAI Whisper to deliver real-time, interactive
-                chatbot reports.</span
-              >
-              <span data-lang-ko
-                >SSE와 OpenAI Whisper를 활용한
-                <strong>저지연(&lt;500ms) 스트리밍 인프라</strong> 구축으로
-                실시간 인터랙티브 챗봇 리포트 제공</span
-              >
+              Integrated a low-latency (&lt;500ms) streaming infrastructure
+              using <strong>SSE (Server-Sent Events)</strong> and
+              <strong>OpenAI Whisper</strong> to deliver real-time, interactive
+              chatbot reports.
             </li>
             <li>
-              <span data-lang-en
-                >Implemented Zod schema validation across 310+ dynamic fields,
-                reducing runtime errors and ensuring type-safe AI chatbot
-                communication.</span
-              >
-              <span data-lang-ko
-                >AI 챗봇 데이터 무결성을 위한 Zod 스키마 검증 도입,
-                <strong>310개 이상 동적 필드</strong>에서 런타임 에러 감소 및
-                타입 안전 통신 확보</span
-              >
+              Engineered a <strong>4-tier data persistence strategy</strong>
+              using Recoil and local storage to manage 310+ dynamic fields,
+              ensuring zero data loss during complex, multi-step user
+              onboarding.
             </li>
             <li>
-              <span data-lang-en
-                >Drove product pivot via GA4/Mixpanel analytics, identifying 60+
-                age user segment and 95% mobile access rate to shape
-                mobile-first UX strategy.</span
-              >
-              <span data-lang-ko
-                >GA4/Mixpanel 분석으로
-                <strong>60대 이상 사용자 세그먼트</strong> 및
-                <strong>95% 모바일 접속률</strong> 발견, 모바일 퍼스트 UX 전략
-                수립 주도</span
-              >
+              Eliminated data type mismatches in AI-model communication by
+              implementing <strong>Zod superRefine</strong> for cross-field
+              validation, significantly enhancing system-wide data integrity.
             </li>
-            <li data-lang-ko>
-              <strong>40+ 커스텀 훅</strong> 설계 및 Recoil atoms 책임별 분리로
-              <strong>260+ 필드 중앙 관리</strong> (140+ 필드 — 챗봇 UI 세션
-              상태 / 120+ 필드 — 백엔드·LLM 전달용 정규화 상태)
-            </li>
-            <li data-lang-ko>
-              GitHub Actions 기반 AWS S3/CloudFront 자동 배포 파이프라인 구축,
-              dev/production 환경 분리 및 CloudFront 캐시 무효화 적용
-            </li>
-            <li data-lang-ko>
-              Toss Payments SDK 연동 및 주문·결제·환불 플로우 구현
+            <li>
+              Spearheaded a data-driven product pivot using
+              <strong>GA4 / Mixpanel analytics</strong>, revealing a 95% mobile
+              access rate and high engagement in unexpected demographics.
             </li>
           </ul>
           <div class="project-tech">
@@ -271,91 +228,40 @@
         </div>
 
         <div class="timeline-item">
-          <h3>
-            <span data-lang-en>Frontend Developer</span
-            ><span data-lang-ko>프론트엔드 개발자</span>
-          </h3>
+          <h3>Frontend Developer</h3>
           <p class="company">aiZENGlobal</p>
-          <p class="period">
-            <span data-lang-en>Mar 2022 — Jun 2024 (2 yrs 4 mos)</span
-            ><span data-lang-ko>2022년 3월 — 2024년 6월 (2년 4개월)</span>
-          </p>
+          <p class="period">Mar 2022 — Jun 2024 (2 yrs 4 mos) · Korea</p>
           <ul class="description">
             <li class="parent-item">
-              <span data-lang-en
-                >Developed a loan brokerage platform that helps e-commerce
-                sellers unlock financing by leveraging receivables from
-                marketplaces like Coupang as collateral.</span
-              >
-              <span data-lang-ko
-                >쿠팡, 네이버스토어 등 마켓플레이스 매출채권을 담보로 이커머스
-                셀러 대출을 중개하는 금융 플랫폼 개발</span
-              >
+              Developed a loan brokerage platform that helps e-commerce sellers
+              unlock financing by leveraging receivables from marketplaces like
+              Coupang as collateral.
             </li>
             <li>
-              <span data-lang-en
-                >Architected a React 18 SPA tri-portal loan brokerage platform
-                (Customer, Operations, Financial Partners) from the ground
-                up.</span
-              >
-              <span data-lang-ko
-                >React 18 SPA 기반 고객·운영·금융 파트너 3개 포탈 대출 중개
-                플랫폼 프론트엔드 설계 및 구축</span
-              >
+              Architected and deployed a
+              <strong>tri-portal ecosystem from the ground up</strong>, managing
+              distinct interfaces for Customers, Internal Operations, and
+              Financial Partners.
             </li>
             <li>
-              <span data-lang-en
-                >Built 86+ reusable UI components and a config-based SearchTable
-                pattern, reducing dev time by 60% across 30+ pages.</span
-              >
-              <span data-lang-ko
-                ><strong>86개 이상 재사용 가능한 UI 컴포넌트</strong> 및 설정
-                기반 SearchTable 패턴 구축, 30개 이상 페이지에서
-                <strong>개발 시간 60% 단축</strong></span
-              >
+              Engineered a configuration-based SearchTable pattern and a library
+              of <strong>99+ reusable UI components</strong>, reducing
+              development time for 30+ administrative pages by
+              <strong>60%</strong>.
             </li>
             <li>
-              <span data-lang-en
-                >Led team-wide code conventions and guidelines documentation as
-                the team grew (2 → 3), cutting refactoring time by 30%, then
-                introduced PR-based code review process anchored on the
-                conventions, reducing post-release bugs by 50%.</span
-              >
-              <span data-lang-ko
-                >팀 확장(2→3명)에 따른 코드 컨벤션 및 개발 가이드 문서화 주도로
-                <strong>리팩토링 시간 30% 절감</strong>, 이어서 컨벤션을
-                기준으로 한 PR 코드 리뷰 프로세스(승인 1명 필수) 도입으로
-                <strong>릴리스 후 버그 50% 감소</strong></span
-              >
-            </li>
-            <li data-lang-ko>
-              <strong>Request Queue 패턴 기반 JWT 자동 갱신</strong> 구현 — 토큰
-              갱신 중 401 실패 요청을 큐에 저장 후 자동 재시도, 금융 데이터 접근
-              <strong>무중단 처리</strong>
-            </li>
-            <li data-lang-ko>
-              <strong>RESTful API 유틸리티 표준화</strong
-              >(get/create/modify/delete 네이밍, 콜백 컴포지션), 3개 앱 전체 API
-              계층 통일
-            </li>
-            <li data-lang-ko>
-              라우트·메뉴·요소 단위 3계층 권한 관리 시스템 구축 및 설정 기반
-              역할 확장 구조 설계
-            </li>
-            <li data-lang-ko>
-              DOMPurify 기반 XSS 방어, 로그인 10회 실패 시 5분 잠금 등 금융
-              서비스 보안 요구사항 구현
+              Implemented
+              <strong>real-time data visualization dashboards</strong>
+              for collateral verification, integrating backend scraping APIs to
+              enable instant loan eligibility assessments for users.
             </li>
             <li>
-              <span data-lang-en
-                >Built marketplace scraping integration with 5-stage state
-                tracking and 50+ error codes, reducing CS inquiries by ~30%
-                through user-friendly error messaging.</span
+              Developed a
+              <strong
+                >JWT auto-renewal system with a Request Queue pattern</strong
               >
-              <span data-lang-ko
-                >판매몰 스크래핑 연동 시스템 구축 — 5단계 상태 추적 및 50+ 에러
-                코드 체계화로 <strong>CS 문의 약 30% 감소</strong></span
-              >
+              and an 8-stage secondary authentication flow to secure
+              mission-critical financial data.
             </li>
           </ul>
           <div class="project-tech">
@@ -369,73 +275,40 @@
         </div>
       </section>
 
-      <!-- Projects -->
+      <!-- Selected Projects -->
       <section class="cv-section cv-section-projects">
-        <h2>
-          <span data-lang-en>Projects</span><span data-lang-ko>프로젝트</span>
-        </h2>
+        <h2>Selected Projects</h2>
 
         <div class="timeline-item">
-          <h3>
-            <span data-lang-en>Gacha Shop Map Service</span
-            ><span data-lang-ko>가챠샵 지도 서비스</span>
-          </h3>
+          <h3>AI Wellness App for Women's Health (dwee)</h3>
           <p class="project-link">
-            <a href="https://apps.apple.com/kr/app/id6759491099" target="_blank"
-              >apps.apple.com/kr/app/id6759491099</a
-            >
-            <span class="dot">·</span>
-            <a href="https://github.com/soojjung/GOTCHA-FE" target="_blank"
-              >github.com/soojjung/GOTCHA-FE</a
+            <a href="https://github.com/soojjung/dwee-wellness-tracker" target="_blank"
+              >github.com/soojjung/dwee-wellness-tracker</a
             >
           </p>
-          <p class="period">
-            <span data-lang-en>Jan 2026 — Present</span
-            ><span data-lang-ko>2026년 1월 — 현재</span>
-          </p>
+          <p class="period">Apr 2026 — Present</p>
           <ul class="description">
             <li>
-              <span data-lang-en
-                >Architected a 3-layer architecture with Container/Presenter
-                pattern; hybrid state management (TanStack Query + Zustand)
-                across 21 API hooks.</span
-              >
-              <span data-lang-ko
-                >Container/Presenter 패턴 기반 3계층 아키텍처 설계, 21개 API
-                훅에 걸쳐 하이브리드 상태 관리(TanStack Query + Zustand)
-                적용</span
-              >
+              Building a women's wellness app for menstrual cycle tracking,
+              next-cycle prediction, condition logging, and future AI-based
+              exercise, nutrition, and mood-journaling recommendations.
             </li>
             <li>
-              <span data-lang-en
-                >Optimized geospatial performance reducing API overhead by 80%
-                through strategic map optimization patterns.</span
-              >
-              <span data-lang-ko
-                >전략적 지도 최적화 패턴 적용으로 지리공간 성능 개선 및
-                <strong>API 오버헤드 80% 감소</strong></span
-              >
+              Designed the MVP around cycle prediction and user feedback
+              collection, with a roadmap to compare rule-based, statistical, and
+              ML-based prediction models.
             </li>
-            <li data-lang-ko>
-              AI 컨텍스트 시스템(.ai/)으로 아키텍처·코딩 표준 문서를 관리, AI를
-              설계 검토 파트너로 활용하여 컨벤션 일관성 확보
+            <li>
+              Established an
+              <strong>AI-assisted engineering workflow</strong> using
+              repository-level context, coding rules, custom commands, memory
+              control, and sub-agent workflows.
             </li>
           </ul>
-          <div class="project-tech">
-            <span>TypeScript</span>
-            <span>React</span>
-            <span>Next.js</span>
-            <span>Zustand</span>
-            <span>TanStack Query</span>
-            <span>Tailwind CSS</span>
-          </div>
         </div>
 
         <div class="timeline-item">
-          <h3>
-            <span data-lang-en>GRE Vocab Master</span
-            ><span data-lang-ko>단어의 신 GRE</span>
-          </h3>
+          <h3>GRE Vocab Master</h3>
           <p class="project-link">
             <a href="https://apps.apple.com/app/id6758345755" target="_blank"
               >apps.apple.com/app/id6758345755</a
@@ -447,41 +320,22 @@
               >github.com/soojjung/gre-vocab-master</a
             >
           </p>
-          <p class="period">
-            <span data-lang-en>Jan 2026 — Present</span
-            ><span data-lang-ko>2026년 1월 — 현재</span>
-          </p>
+          <p class="period">Jan 2026 — Present</p>
           <ul class="description">
             <li>
-              <span data-lang-en
-                >Shipped a 1,560-word GRE vocabulary app on web and iOS using
-                React 19 + Capacitor 8 — live on the App Store and actively
-                maintained through v1.5.</span
-              >
-              <span data-lang-ko
-                >React 19 + Capacitor 8 기반 GRE 1,560 단어 학습 앱을 웹·iOS
-                동시 출시, App Store 출시 후 v1.5까지 라이브 운영</span
-              >
-            </li>
-            <li data-lang-ko>
-              빈칸 퀴즈에서 정답 단어가 변형형(harrowed 등)으로 노출되던 silent
-              bug 를 인플렉션 4종(접미사·y→i·e탈락·자음중첩) 정규식으로 해결,
-              <strong>1,560건 전수 시뮬레이션 99.9% 매칭</strong> 검증
+              Released a 1,560-word GRE vocabulary learning app to web and iOS
+              using React 19 and Capacitor, maintaining the product through App
+              Store v1.5.
             </li>
             <li>
-              <span data-lang-en
-                >After a Supabase auto-pause outage went undetected for 30 days,
-                integrated Sentry across web and iOS native and established an
-                operations log practice — reducing time-to-detection of
-                subsequent crashes to under 3 days.</span
-              >
-              <span data-lang-ko
-                >Supabase Free tier 자동중지로 30일간 장애 인지 지연 인시던트를
-                계기로
-                <strong
-                  >Sentry 웹/iOS 네이티브 통합 + 운영 로그 체계 구축</strong
-                >, 이후 신규 크래시 3일 내 인지·수정</span
-              >
+              Fixed a silent quiz-generation bug involving inflected word forms
+              through regex-based normalization and full simulation across 1,560
+              vocabulary items.
+            </li>
+            <li>
+              Integrated <strong>Sentry across web and iOS</strong> after a
+              Supabase auto-pause incident, establishing production monitoring
+              and reducing new crash detection time to under 3 days.
             </li>
           </ul>
           <div class="project-tech">
@@ -497,49 +351,78 @@
         </div>
 
         <div class="timeline-item">
-          <h3>
-            <span data-lang-en>Health Supplement E-Commerce Platform</span
-            ><span data-lang-ko>건강기능식품 이커머스 플랫폼</span>
-          </h3>
+          <h3>AI Policy Assistant for Newlyweds (bbumate)</h3>
           <p class="project-link">
-            <a
-              href="https://github.com/orgs/iHerbYou/repositories"
-              target="_blank"
-              >github.com/orgs/iHerbYou</a
+            <a href="https://bbumate.com" target="_blank">bbumate.com</a>
+            <span class="dot">·</span>
+            <a href="https://github.com/soojjung/bbumate-policy-chat" target="_blank"
+              >github.com/soojjung/bbumate-policy-chat</a
             >
           </p>
-          <p class="period">
-            <span data-lang-en>Aug 2025 — Oct 2025</span
-            ><span data-lang-ko>2025년 8월 — 2025년 10월</span>
-          </p>
+          <p class="period">Aug 2025 — Nov 2025</p>
           <ul class="description">
             <li>
-              <span data-lang-en
-                >Built a full-stack e-commerce platform (Spring Boot + React)
-                with auth, product catalog, cart, order, and review flows.</span
-              >
-              <span data-lang-ko
-                >Spring Boot + React 기반 건강기능식품 이커머스 플랫폼 구축,
-                인증·상품·장바구니·주문·리뷰 등 핵심 사용자 플로우 구현</span
-              >
-            </li>
-            <li data-lang-ko>
-              React + TypeScript 기반 인증/주문 UX 구현: 401 자동 갱신(Silent
-              Refresh), Route Guard, 게스트/회원 장바구니 병합 등 사용자 흐름
-              안정화
+              Architected an <strong>end-to-end RAG pipeline</strong> using
+              LangChain (LCEL) and ChromaDB, centralizing 113+ fragmented
+              policies into a high-dimensional (4,096-dim) vector store.
             </li>
             <li>
-              <span data-lang-en
-                >Applied Spring Security JWT auth, Toss Payments
-                approval/refund, order state machine with optimistic locking,
-                and EntityGraph-based N+1 optimization.</span
+              Achieved a <strong>66% reduction in system latency</strong> by
+              implementing parallel document grading, reducing complex task
+              processing times from 4.2s to 1.4s.
+            </li>
+            <li>
+              Engineered a
+              <strong
+                >fallback strategy (RAG &rarr; Query Re-write &rarr; Web
+                Search)</strong
               >
-              <span data-lang-ko
-                >Spring Security 기반 JWT 인증/인가, 토스페이먼츠 결제
-                승인/환불,
-                <strong>주문 상태 머신 및 낙관적 잠금(@Version)</strong>,
-                <strong>EntityGraph 기반 N+1 최적화</strong> 적용</span
-              >
+              using the Tavily API, ensuring 100% query fulfillment even when
+              domain-specific data was missing.
+            </li>
+            <li>
+              Developed a <strong>high-reliability grounding system</strong>
+              with 97+ URL mappings, ensuring all AI responses include
+              <strong>100% source attribution</strong> to official documentation
+              to prevent errors.
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>LangChain</span>
+            <span>ChromaDB</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Health Supplement E-commerce Platform</h3>
+          <p class="project-link">
+            <a
+              href="https://github.com/soojjung/health-supplement-shop"
+              target="_blank"
+              >github.com/soojjung/health-supplement-shop</a
+            >
+          </p>
+          <p class="period">Aug 2025 — Oct 2025</p>
+          <ul class="description">
+            <li>
+              Built a <strong>Spring Boot + React e-commerce platform</strong>
+              for health supplements, implementing core user flows across
+              authentication, product browsing, cart, order, payment, refund,
+              and review features.
+            </li>
+            <li>
+              Developed stable frontend authentication and order UX using React
+              and TypeScript, including silent token refresh, route guards, and
+              guest/member cart merging.
+            </li>
+            <li>
+              Implemented backend reliability patterns with
+              <strong>Spring Security JWT authentication</strong>, Toss Payments
+              approval/refund flows, order state management,
+              <strong>optimistic locking</strong>, and
+              <strong>EntityGraph-based N+1 query optimization</strong>.
             </li>
           </ul>
           <div class="project-tech">
@@ -555,107 +438,39 @@
         </div>
 
         <div class="timeline-item">
-          <h3>
-            <span data-lang-en>RAG-based AI Policy Assistant for Newlyweds</span
-            ><span data-lang-ko>RAG 기반 신혼부부 정책 AI 도우미</span>
-          </h3>
+          <h3>Personal Color Self-Diagnosis Service</h3>
           <p class="project-link">
-            <a href="https://bbumate.com" target="_blank"
-              >https://bbumate.com</a
-            >
-            <span class="dot">·</span>
-            <a href="https://github.com/soojjung/bbumate-ai" target="_blank"
-              >github.com/soojjung/bbumate-ai</a
-            >
-          </p>
-          <p class="period">
-            <span data-lang-en>Oct 2025 — Dec 2025</span
-            ><span data-lang-ko>2025년 10월 — 2025년 12월</span>
-          </p>
-          <ul class="description">
-            <li>
-              <span data-lang-en
-                >Architected an end-to-end RAG pipeline (LangChain + ChromaDB)
-                centralizing 113+ policies; reduced latency 66% via parallel
-                document grading.</span
-              >
-              <span data-lang-ko
-                >LangChain + ChromaDB 기반 엔드투엔드 RAG 파이프라인 구축, 113개
-                이상 정책 통합 관리 및 병렬 문서 평가로
-                <strong>지연시간 66% 단축</strong></span
-              >
-            </li>
-            <li>
-              <span data-lang-en
-                >Engineered a multi-step fallback strategy (RAG &rarr; Query
-                Re-write &rarr; Web Search) achieving 100% query
-                fulfillment.</span
-              >
-              <span data-lang-ko
-                >RAG &rarr; 쿼리 재작성 &rarr; 웹 검색 순서의
-                <strong>다단계 폴백 전략</strong> 설계,
-                <strong>100% 쿼리 처리율</strong> 달성</span
-              >
-            </li>
-            <li data-lang-ko>
-              97개 이상 URL 매핑 기반 고신뢰 그라운딩 시스템 구축, 모든 AI
-              응답에 공식 문서 출처 100% 명시
-            </li>
-          </ul>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>LangChain</span>
-            <span>ChromaDB</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <h3>
-            <span data-lang-en>Personal Color Self-Diagnosis Service</span
-            ><span data-lang-ko>퍼스널 컬러 자가진단 서비스</span>
-          </h3>
-          <p class="project-link">
-            <a href="https://omct.web.app" target="_blank"
-              >https://omct.web.app</a
-            >
+            <a href="https://omct.web.app" target="_blank">omct.web.app</a>
             <span class="dot">·</span>
             <a
-              href="https://github.com/soojjung/OppaManyColorTone"
+              href="https://github.com/soojjung/personal-color-self-diagnosis"
               target="_blank"
-              >github.com/soojjung/OppaManyColorTone</a
+              >github.com/soojjung/personal-color-self-diagnosis</a
             >
           </p>
-          <p class="period">
-            <span data-lang-en>Feb 2023 — Aug 2024</span
-            ><span data-lang-ko>2023년 2월 — 2024년 8월</span>
-          </p>
+          <p class="period">Feb 2023 — Aug 2024</p>
           <ul class="description">
             <li>
-              <span data-lang-en
-                >Engineered a 9-stage diagnosis algorithm with 36 curated chips
-                and bonus round re-evaluation, achieving 100% diagnosis
-                rate.</span
-              >
-              <span data-lang-ko
-                >36개 선별 칩과 보너스 라운드 재평가를 활용한 9단계 알고리즘
-                설계</span
-              >
+              Engineered a
+              <strong>9-stage algorithm using 36 curated chips</strong>
+              with a bonus round re-evaluating the top 4 candidates to resolve
+              ties, ensuring a 100% diagnosis rate.
             </li>
             <li>
-              <span data-lang-en
-                >Scaled to 83,000+ diagnoses and 27,600+ AAU with 91.5%
-                completion rate.</span
-              >
-              <span data-lang-ko
-                ><strong>83,000회 이상 진단</strong> 및
-                <strong>27,600명 이상 AAU</strong> 달성,
-                <strong>91.5% 완료율</strong> 기록</span
-              >
+              Scaled the platform to
+              <strong>83,000+ diagnoses</strong> and 27,600+ AAU while
+              maintaining a <strong>91.5% completion rate</strong> through an
+              intuitive UI/UX.
             </li>
-            <li data-lang-ko>
-              SEO/SSR 최적화로 <strong>83% 자연 유입 트래픽</strong> 달성,
-              "퍼스널컬러 테스트" 키워드 구글 검색 첫 페이지 노출
+            <li>
+              Designed a custom tie-breaker logic and a state management pattern
+              using <strong>Recoil atoms</strong> with localStorage persistence
+              to handle complex diagnostic flows.
+            </li>
+            <li>
+              Achieved <strong>83% organic traffic</strong> (30,000+ sessions)
+              by ranking on the first page of Google for keywords through
+              targeted SEO and SSR optimization.
             </li>
           </ul>
           <div class="project-tech">
@@ -669,148 +484,40 @@
         </div>
       </section>
 
-      <!-- Education -->
-      <section class="cv-section cv-section-education">
-        <h2>
-          <span data-lang-en>Education</span><span data-lang-ko>교육</span>
-        </h2>
-
-        <div class="timeline-item">
-          <h3>
-            <span data-lang-en
-              >BSc. in Applied Mathematics and Statistics &amp; Economics</span
-            ><span data-lang-ko>응용수학 및 통계학 &amp; 경제학 학사</span>
-          </h3>
-          <p class="company">
-            <span data-lang-en
-              >Stony Brook, State University of New York — GPA 3.57 / 4.0</span
-            ><span data-lang-ko
-              >스토니브룩, 뉴욕주립대학교 — GPA 3.57 / 4.0</span
-            >
-          </p>
-          <p class="period">
-            <span data-lang-en>Graduated Dec 2018</span
-            ><span data-lang-ko>2018년 12월 졸업</span>
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <h3>
-            <span data-lang-en>Backend &amp; AI Engineering Bootcamp</span
-            ><span data-lang-ko>백엔드 &amp; AI 엔지니어링 부트캠프</span>
-          </h3>
-          <p class="company">
-            <span data-lang-en>FastCampus K-Digital Training</span
-            ><span data-lang-ko>패스트캠퍼스 K-Digital Training</span>
-          </p>
-          <p class="period">
-            <span data-lang-en>Jun 2025 — Dec 2025</span
-            ><span data-lang-ko>2025년 6월 — 2025년 12월</span>
-          </p>
-          <ul class="description">
-            <li data-lang-ko>
-              Java/Spring Boot 백엔드 개발, 자료구조 &amp; 알고리즘,
-              데이터베이스, OS &amp; 네트워크 (196h)
-            </li>
-            <li data-lang-ko>
-              AI &amp; 머신러닝: Python 기반 ML 워크플로우, NLP 기초,
-              Transformer 기반 LLM (BERT, GPT) (34h)
-            </li>
-          </ul>
-        </div>
-      </section>
-
       <!-- Additional -->
       <section class="cv-section cv-section-additional">
-        <h2>
-          <span data-lang-en>Additional</span
-          ><span data-lang-ko>기타 활동</span>
-        </h2>
+        <h2>Additional</h2>
         <ul class="additional-list">
           <li>
-            <span data-lang-en
-              >Data Structures — University of California San Diego (Coursera,
-              Mar 2026)</span
-            >
-            <span data-lang-ko
-              >Data Structures — University of California San Diego (Coursera,
-              2026년 3월)</span
-            >
+            Data Structures — University of California San Diego (Coursera, Mar
+            2026)
           </li>
           <li>
-            <span data-lang-en
-              >Staff Member, TeoConf 2024 (3rd Edition) — Planned event programs
-              and coordinated logistics for 200+ attendees</span
-            >
-            <span data-lang-ko
-              >TeoConf 2024 (3회) 스태프 — 이벤트 기획 및 200명 이상 참가자 행사
-              운영 담당</span
-            >
+            FastCampus K-Digital Training — Backend &amp; AI Engineering (Jun
+            2025 — Dec 2025)
           </li>
+          <li>
+            Staff Member, TeoConf 2024 (3rd Edition) — Coordinated event
+            logistics and attendee (200+) engagement
+          </li>
+          <li>Google Analytics Certification (GA4, 2026)</li>
         </ul>
       </section>
     </div>
 
     <script>
-      // English order: About → Education → Experience → Projects → Skills → Additional
-      var enOrder = [
-        ".cv-section-about",
-        ".cv-section-education",
-        ".cv-section-experience",
-        ".cv-section-projects",
-        ".cv-section-skills",
-        ".cv-section-additional",
-      ];
-      // Korean order: About → Skills → Experience → Projects → Education → Additional
-      var koOrder = [
-        ".cv-section-about",
-        ".cv-section-skills",
-        ".cv-section-experience",
-        ".cv-section-projects",
-        ".cv-section-education",
-        ".cv-section-additional",
-      ];
-
-      function reorderSections(order) {
-        var container = document.querySelector(".cv-container");
-        order.forEach(function (sel) {
-          var el = container.querySelector(sel);
-          if (el) container.appendChild(el);
-        });
-      }
-
-      function setLang(lang) {
-        document.documentElement.lang = lang;
-        document.querySelectorAll("[data-lang-en]").forEach(function (el) {
-          el.style.display = lang === "en" ? "" : "none";
-        });
-        document.querySelectorAll("[data-lang-ko]").forEach(function (el) {
-          el.style.display = lang === "ko" ? "" : "none";
-        });
-        reorderSections(lang === "en" ? enOrder : koOrder);
-        localStorage.setItem("cv-lang", lang);
-      }
-
-      function toggleLang() {
-        var current = localStorage.getItem("cv-lang") || "en";
-        setLang(current === "en" ? "ko" : "en");
-      }
-
       function downloadPdf() {
-        var lang = localStorage.getItem("cv-lang") || "en";
-        var filename = lang === "ko" ? "정수진 이력서" : "Soojin Jung CV";
         var container = document.querySelector(".cv-container");
         document.body.classList.add("pdf-mode");
         container.querySelectorAll("a").forEach(function (a) {
           a.style.color = "#1a1a1a";
         });
 
-        // Wait for styles to apply before capturing
         requestAnimationFrame(function () {
           html2pdf()
             .set({
               margin: [10, 12, 10, 12],
-              filename: filename + ".pdf",
+              filename: "Soojin Jung CV.pdf",
               image: { type: "jpeg", quality: 0.98 },
               html2canvas: {
                 scale: 2,
@@ -832,8 +539,6 @@
             });
         });
       }
-
-      setLang(localStorage.getItem("cv-lang") || "en");
     </script>
   </body>
 </html>

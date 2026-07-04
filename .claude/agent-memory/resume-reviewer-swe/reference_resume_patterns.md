@@ -62,3 +62,37 @@ type: reference
 - Big tech backend senior: instant reject without 4+ yrs production backend experience
 - Big tech fullstack/frontend: possible if fintech domain depth + real user product present
 - AI startup: RAG implementation is strong signal; theory gaps (embedding, chunking, reranking) exposed at 2nd interview
+
+---
+
+## US Market Patterns — Korean Developer Applying for Internships (Observed Jul 2026)
+
+### Experience/Intern Contradiction
+- "3+ years of experience" in Summary on an intern application is a red flag for US recruiters, NOT a positive signal
+- US intern pipelines filter for students without significant industry experience; multi-year experience triggers "overqualified for intern comp" or "visa-driven" interpretation
+- Fix: lead Summary with M.S. student identity, then frame prior experience as a competitive differentiator explicitly: "seeking internship roles to bridge industry experience with graduate-level AI systems research"
+- Never list years of experience in the Summary when applying for intern roles
+
+### Career Gap Visibility (US vs. Korean Expectations)
+- US hiring managers do not infer bootcamp attendance from an "Additional" section listing
+- FastCampus K-Digital Training at bottom of "Additional" next to conference staff credits reads as a hobby, not structured training
+- Fix: either promote to Education section with outcomes, or close gap explicitly in the Summary sentence
+- Korean candidates often underestimate how visible employment gaps are on US resumes — US hiring culture is more gap-sensitive than Korean hiring culture for entry-level roles
+
+### Project Volume as Gap Signal
+- 4 of 6 projects launched during a 16-month career gap reads as "unemployment portfolio building" to US HMs
+- Threshold: more than 3 short-duration projects in a gap period triggers this pattern
+- Fix: keep 2-3 projects with strong metrics; remove projects with no metrics or that dilute the primary narrative
+- Curating is a signal of product maturity; listing everything signals inexperience with US hiring norms
+
+### AI Platform / MLOps Frontend ATS Keywords (2025-2026)
+- JDs from Anthropic, Scale AI, Modal, Replicate, Weights & Biases, Comet ML use specific vocabulary not always in a frontend engineer's natural language
+- Critical terms to add when accurate: "CI/CD pipeline," "vector embeddings," "LLM inference," "observability," "model serving," "prompt engineering," "fault-tolerant orchestration"
+- "Fallback orchestration" is not standard vocabulary — replace with "fault-tolerant LLM orchestration" or describe the pattern concretely
+- "Dashboard UI" in Skills is a product description, not a technical skill — ATS does not match it against JD requirements
+- "App Store Release" in Infrastructure/Tools is a milestone, not a skill — move to bullet prose, free up Skills real estate
+
+### US Intern ATS Competitiveness by Company Tier
+- Big Tech intern (Meta, Google, Amazon): ATS filters on GPA (3.7+ typical), US school familiarity, competitive programming signals — Korean professional background is near-invisible without referral
+- AI startup intern (Series A-C): personal product with 10K+ users is a genuine differentiator; RAG pipeline implementation is strong signal; cover letter explaining M.S. entry strategy significantly improves pass rate
+- Mid-size tech intern: Korea-based work history creates unfamiliarity risk; needs explicit framing of why applying as intern

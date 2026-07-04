@@ -1,6 +1,6 @@
 ---
-name: Soojin Resume Review — June 2026
-description: Full 10-step review findings for Soojin's Korean/English bilingual resume, targeting domestic fullstack/backend 3-5yr track
+name: Soojin Resume Review — June & July 2026
+description: Full 10-step review findings for Soojin's English US-market internship resume (Jul 2026) and prior Korean domestic review (Jun 2026)
 type: project
 ---
 
@@ -67,3 +67,47 @@ OMCT → bbumate → GRE → iHerbYou → 가챠샵
 - Strategy A: Fintech frontend senior → in-house fullstack (fastest path to employment)
 - Strategy B: AI engineer angle (RAG + FastAPI + Python) — highest growth market 2025-2026
 - Current resume is stuck between both; recommend two separate resume versions
+
+---
+
+## English Resume — US Market Internship Review (2026-07-05)
+
+Target: SWE Intern — Frontend / Full-Stack / AI Platform / MLOps Frontend at US companies. NYU M.S. AI Robotics (Sep 2026 start).
+
+**Scores (Jul 2026, English version):**
+- Overall: 67/100
+- ATS: 62/100
+- Recruiter Readability: 63/100
+- Technical Strength: 74/100
+- Impact: 58/100
+- AI Startup (intern): 72/100
+- Mid-size Tech (intern): 55/100
+- Big Tech (intern): 22/100
+
+**Material improvements vs. June Korean review:**
+- Self-deprecating opener removed — Summary is now strength-forward
+- English version is now content-complete (9-bullet gap from June is closed)
+- OMCT/Personal Color project now has full metrics (84K diagnoses, 27,600 AAU, 91.5% completion, 83% organic traffic)
+- RAG bbumate entry now fully described with before/after latency (4.2s → 1.4s)
+
+**Remaining critical issues (English/US internship):**
+1. "3+ years of experience" in Summary creates experience/intern contradiction — US recruiters flag this as a red flag, not an asset, for intern applications
+2. 16-month career gap (May 2025 – Sep 2026) not explained — FastCampus bootcamp buried in "Additional" section; reads as unemployment
+3. Six projects creates "portfolio dump" impression — cut to 3 (Personal Color → bbumate → GRE Vocab Master)
+4. Two company-description bullets (BeHappy, aiZENGlobal openers) describe product, not engineer contribution
+5. ATS gaps: missing "CI/CD pipeline," "vector embeddings," "prompt engineering," "LLM inference," "observability"
+
+**Top 3 ROI actions (each <1hr):**
+1. Rewrite Summary: lead with "M.S. student at NYU (AI Robotics, starting Sep 2026)" + close gap with FastCampus + reframe 3yr as differentiator
+2. Cut Projects to 3: Personal Color → bbumate → GRE Vocab Master; remove dwee (no metrics) and Health Supplement (dilutes AI narrative)
+3. Add 5 ATS keywords to existing bullets/Skills: "vector embeddings" (bbumate), "prompt engineering" (Skills), "CI/CD (GitHub Actions)" (Skills), "Sentry" (Skills), "LLM orchestration" (Skills)
+
+**Hiring sim — US intern context:**
+- AI startup Series A-C: Maybe → Yes with cover letter explaining M.S. entry strategy; 84K user product is conversation-starter
+- Mid-size (500-5000): Maybe; Korea-based history creates unfamiliarity risk for intern slots
+- Big Tech intern pipeline: No — ATS will filter; GPA below threshold (3.57 vs 3.7+ typical), no US work history, comp/level confusion from 3yr experience claim
+
+**US-market specific pattern observed:**
+- "3+ years experience" on an intern application signals to US recruiters: visa-driven or overqualified for intern comp — must be reframed proactively in Summary
+- Career gap must be named and closed explicitly; US hiring managers do not infer bootcamp from "Additional" section placement
+- Six side projects during gap period reads as gap-filling, not genuine product development — curate to 2-3 strongest with metrics

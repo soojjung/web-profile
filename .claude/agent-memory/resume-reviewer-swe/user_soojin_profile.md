@@ -15,6 +15,10 @@ Soojin Jung (정수진) — the user whose resume is being reviewed and optimize
 - Target role: Fullstack/Backend engineer (stated desire to "grow into fullstack")
 - Actual positioning: Frontend mid-level transitioning to fullstack; backend experience is only via side projects and bootcamp
 - Key strengths: FinTech domain depth, personal product with 83,000+ real users, RAG pipeline implementation, AI tooling integration
-- Language: Korean-primary resume with English parallel version (English version has significant content gaps)
+- Education: M.S. Computer Engineering (AI Robotics Track) at NYU, starting Sep 2026 — this is the anchor for current US job search
+- Target (US market, Jul 2026): SWE Intern — Frontend / Full-Stack / AI Platform / MLOps Frontend at US companies
+- Career gap explanation: FastCampus K-Digital Training backend/AI bootcamp (Jun–Dec 2025) + personal projects (Jan–Jul 2026); bootcamp was buried in "Additional" — needs to be elevated
+- Language: English resume now content-complete and synced with Korean version (9-bullet gap from Jun 2026 review is closed)
 - GitHub: github.com/soojjung
 - Blog: medium.com/@sojjung3
+- Personal product signal: Personal Color Self-Diagnosis at 84,000+ diagnoses, 27,600+ AAU, 91.5% completion rate — strongest differentiator for US AI startup internship applications

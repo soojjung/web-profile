@@ -66,14 +66,16 @@
       <section class="cv-section cv-section-about">
         <h2>Summary</h2>
         <p class="about-text">
-          M.S. student at New York University and frontend engineer with 3+
-          years of experience building production-grade web and mobile
-          applications using React, TypeScript, TanStack Query, Zustand, and
-          modern API-driven architectures. Experienced in AI-powered product
-          development, RAG pipelines, real-time streaming interfaces, and
-          production monitoring. Seeking software engineering internship
-          opportunities in frontend, full-stack, AI platform, and MLOps frontend
-          roles.
+          M.S. student in Computer Engineering (AI Robotics Track) at New York
+          University, focused on AI systems, LLM applications, and
+          human-centered AI interfaces. Bring 3 years of prior frontend
+          engineering experience shipping production React/TypeScript
+          applications &mdash; including a personal color diagnostic serving
+          <strong>84,000+ users</strong> and a RAG-based policy assistant that
+          reduced query latency by <strong>66%</strong> &mdash; with hands-on
+          expertise in RAG pipelines, real-time streaming, and production
+          monitoring. Seeking software engineering internship opportunities in
+          frontend, full-stack, and AI platform roles.
         </p>
       </section>
 
@@ -117,10 +119,12 @@
             <h3>AI / LLM Systems</h3>
             <div class="skill-tags">
               <span class="skill-tag">RAG pipelines</span>
+              <span class="skill-tag">Vector embeddings</span>
+              <span class="skill-tag">Prompt engineering</span>
+              <span class="skill-tag">LLM orchestration</span>
               <span class="skill-tag">LangChain</span>
               <span class="skill-tag">ChromaDB</span>
               <span class="skill-tag">OpenAI API</span>
-              <span class="skill-tag">Fallback orchestration</span>
             </div>
           </div>
           <div class="skill-row">
@@ -138,7 +142,6 @@
             <div class="skill-tags">
               <span class="skill-tag">Sentry</span>
               <span class="skill-tag">Production monitoring</span>
-              <span class="skill-tag">Incident response</span>
               <span class="skill-tag">GA4</span>
               <span class="skill-tag">Mixpanel</span>
             </div>
@@ -171,10 +174,8 @@
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">AWS</span>
               <span class="skill-tag">Vercel</span>
-              <span class="skill-tag">GitHub Actions</span>
-
+              <span class="skill-tag">CI/CD (GitHub Actions)</span>
               <span class="skill-tag">Capacitor</span>
-              <span class="skill-tag">App Store Release</span>
             </div>
           </div>
         </div>
@@ -191,30 +192,25 @@
           <ul class="description">
             <li class="parent-item">
               Built an AI-powered mobile finance service that generates
-              long-term financial roadmaps for newlyweds via interactive chatbot
-              onboarding.
+              long-term financial roadmaps for newlyweds via interactive
+              chatbot onboarding.
             </li>
             <li>
-              Integrated a low-latency (&lt;500ms) streaming infrastructure
-              using <strong>SSE (Server-Sent Events)</strong> and
-              <strong>OpenAI Whisper</strong> to deliver real-time, interactive
-              chatbot reports.
+              Cut chatbot report latency to <strong>&lt;500ms</strong> by
+              architecting an <strong>SSE + OpenAI Whisper</strong> streaming
+              pipeline for real-time voice-to-text interactions.
             </li>
             <li>
               Engineered a <strong>4-tier data persistence strategy</strong>
-              using Recoil and local storage to manage 310+ dynamic fields,
-              ensuring zero data loss during complex, multi-step user
+              (Recoil + local storage) managing <strong>310+ dynamic
+              fields</strong> with zero data loss across multi-step
               onboarding.
             </li>
             <li>
-              Eliminated data type mismatches in AI-model communication by
-              implementing <strong>Zod superRefine</strong> for cross-field
-              validation, significantly enhancing system-wide data integrity.
-            </li>
-            <li>
-              Spearheaded a data-driven product pivot using
-              <strong>GA4 / Mixpanel analytics</strong>, revealing a 95% mobile
-              access rate and high engagement in unexpected demographics.
+              Drove a data-driven product pivot via
+              <strong>GA4 / Mixpanel</strong>, surfacing a
+              <strong>95% mobile access rate</strong> and unexpected
+              high-engagement demographics.
             </li>
           </ul>
           <div class="project-tech">
@@ -233,33 +229,26 @@
           <p class="period">Mar 2022 — Jun 2024 (2 yrs 4 mos) · Korea</p>
           <ul class="description">
             <li class="parent-item">
-              Developed a loan brokerage platform that helps e-commerce sellers
-              unlock financing by leveraging receivables from marketplaces like
-              Coupang as collateral.
+              Developed a loan brokerage platform that helps e-commerce
+              sellers unlock financing by leveraging marketplace receivables
+              (e.g., Coupang) as collateral.
             </li>
             <li>
               Architected and deployed a
-              <strong>tri-portal ecosystem from the ground up</strong>, managing
-              distinct interfaces for Customers, Internal Operations, and
-              Financial Partners.
+              <strong>tri-portal ecosystem from the ground up</strong>,
+              managing distinct interfaces for Customers, Internal
+              Operations, and Financial Partners.
             </li>
             <li>
-              Engineered a configuration-based SearchTable pattern and a library
-              of <strong>99+ reusable UI components</strong>, reducing
-              development time for 30+ administrative pages by
-              <strong>60%</strong>.
+              Reduced development time for
+              <strong>30+ admin pages by 60%</strong> via a
+              configuration-based SearchTable pattern and
+              <strong>99+ reusable UI components</strong>.
             </li>
             <li>
-              Implemented
-              <strong>real-time data visualization dashboards</strong>
-              for collateral verification, integrating backend scraping APIs to
-              enable instant loan eligibility assessments for users.
-            </li>
-            <li>
-              Developed a
-              <strong
-                >JWT auto-renewal system with a Request Queue pattern</strong
-              >
+              Built a
+              <strong>JWT auto-renewal system with a Request Queue
+                pattern</strong>
               and an 8-stage secondary authentication flow to secure
               mission-critical financial data.
             </li>
@@ -280,31 +269,87 @@
         <h2>Selected Projects</h2>
 
         <div class="timeline-item">
-          <h3>AI Wellness App for Women's Health (dwee)</h3>
+          <h3>Personal Color Self-Diagnosis Service</h3>
           <p class="project-link">
-            <a href="https://github.com/soojjung/dwee-wellness-tracker" target="_blank"
-              >github.com/soojjung/dwee-wellness-tracker</a
+            <a href="https://omct.web.app" target="_blank">omct.web.app</a>
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/personal-color-self-diagnosis"
+              target="_blank"
+              >github.com/soojjung/personal-color-self-diagnosis</a
             >
           </p>
-          <p class="period">Apr 2026 — Present</p>
+          <p class="period">Feb 2023 — Aug 2024, Jul 2026</p>
           <ul class="description">
             <li>
-              Building a women's wellness app for menstrual cycle tracking,
-              next-cycle prediction, condition logging, and future AI-based
-              exercise, nutrition, and mood-journaling recommendations.
+              Scaled the platform to <strong>84,000+ diagnoses</strong> and
+              <strong>27,600+ AAU</strong> with a
+              <strong>91.5% completion rate</strong> through an intuitive
+              UI/UX.
             </li>
             <li>
-              Designed the MVP around cycle prediction and user feedback
-              collection, with a roadmap to compare rule-based, statistical, and
-              ML-based prediction models.
+              Shipped an optional
+              <strong>AI color recommendation</strong> feature using
+              <strong>OpenAI GPT-4o Vision</strong> with
+              <strong>hybrid LLM routing</strong> (gpt-4o-mini &rarr; gpt-4o
+              fallback on low confidence), boosting engagement for users who
+              struggle to pick colors on their own.
             </li>
             <li>
-              Established an
-              <strong>AI-assisted engineering workflow</strong> using
-              repository-level context, coding rules, custom commands, memory
-              control, and sub-agent workflows.
+              Achieved <strong>83% organic traffic</strong> (30,000+
+              sessions) by ranking on Google&rsquo;s first page through
+              targeted SEO and SSR optimization.
             </li>
           </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Recoil</span>
+            <span>Styled-components</span>
+            <span>Firebase</span>
+            <span>OpenAI GPT-4o</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>AI Policy Assistant for Newlyweds (bbumate)</h3>
+          <p class="project-link">
+            <a href="https://bbumate.com" target="_blank">bbumate.com</a>
+            <span class="dot">·</span>
+            <a href="https://github.com/soojjung/bbumate-policy-chat" target="_blank"
+              >github.com/soojjung/bbumate-policy-chat</a
+            >
+          </p>
+          <p class="period">Aug 2025 — Nov 2025</p>
+          <ul class="description">
+            <li>
+              Architected an <strong>end-to-end RAG pipeline</strong>
+              (<strong>LangChain LCEL + ChromaDB</strong>) with
+              <strong>4,096-dim vector embeddings</strong>, centralizing
+              113+ fragmented policy documents for semantic retrieval at
+              production scale.
+            </li>
+            <li>
+              Cut system latency by <strong>66%</strong> (4.2s &rarr; 1.4s)
+              by implementing parallel document grading across the retrieval
+              pipeline.
+            </li>
+            <li>
+              Engineered a
+              <strong>fallback strategy (RAG &rarr; Query Re-write &rarr;
+                Web Search)</strong>
+              via the Tavily API, ensuring
+              <strong>100% query fulfillment</strong> even when
+              domain-specific data was missing.
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>LangChain</span>
+            <span>ChromaDB</span>
+          </div>
         </div>
 
         <div class="timeline-item">
@@ -347,148 +392,6 @@
             <span>Tailwind CSS</span>
             <span>Vite</span>
             <span>PWA</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <h3>AI Policy Assistant for Newlyweds (bbumate)</h3>
-          <p class="project-link">
-            <a href="https://bbumate.com" target="_blank">bbumate.com</a>
-            <span class="dot">·</span>
-            <a href="https://github.com/soojjung/bbumate-policy-chat" target="_blank"
-              >github.com/soojjung/bbumate-policy-chat</a
-            >
-          </p>
-          <p class="period">Aug 2025 — Nov 2025</p>
-          <ul class="description">
-            <li>
-              Architected an <strong>end-to-end RAG pipeline</strong> using
-              LangChain (LCEL) and ChromaDB, centralizing 113+ fragmented
-              policies into a high-dimensional (4,096-dim) vector store.
-            </li>
-            <li>
-              Achieved a <strong>66% reduction in system latency</strong> by
-              implementing parallel document grading, reducing complex task
-              processing times from 4.2s to 1.4s.
-            </li>
-            <li>
-              Engineered a
-              <strong
-                >fallback strategy (RAG &rarr; Query Re-write &rarr; Web
-                Search)</strong
-              >
-              using the Tavily API, ensuring 100% query fulfillment even when
-              domain-specific data was missing.
-            </li>
-            <li>
-              Developed a <strong>high-reliability grounding system</strong>
-              with 97+ URL mappings, ensuring all AI responses include
-              <strong>100% source attribution</strong> to official documentation
-              to prevent errors.
-            </li>
-          </ul>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>LangChain</span>
-            <span>ChromaDB</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Health Supplement E-commerce Platform</h3>
-          <p class="project-link">
-            <a
-              href="https://github.com/soojjung/health-supplement-shop"
-              target="_blank"
-              >github.com/soojjung/health-supplement-shop</a
-            >
-          </p>
-          <p class="period">Aug 2025 — Oct 2025</p>
-          <ul class="description">
-            <li>
-              Built a <strong>Spring Boot + React e-commerce platform</strong>
-              for health supplements, implementing core user flows across
-              authentication, product browsing, cart, order, payment, refund,
-              and review features.
-            </li>
-            <li>
-              Developed stable frontend authentication and order UX using React
-              and TypeScript, including silent token refresh, route guards, and
-              guest/member cart merging.
-            </li>
-            <li>
-              Implemented backend reliability patterns with
-              <strong>Spring Security JWT authentication</strong>, Toss Payments
-              approval/refund flows, order state management,
-              <strong>optimistic locking</strong>, and
-              <strong>EntityGraph-based N+1 query optimization</strong>.
-            </li>
-          </ul>
-          <div class="project-tech">
-            <span>Java</span>
-            <span>Spring Boot</span>
-            <span>Spring Security</span>
-            <span>JPA</span>
-            <span>MySQL</span>
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Docker</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Personal Color Self-Diagnosis Service</h3>
-          <p class="project-link">
-            <a href="https://omct.web.app" target="_blank">omct.web.app</a>
-            <span class="dot">·</span>
-            <a
-              href="https://github.com/soojjung/personal-color-self-diagnosis"
-              target="_blank"
-              >github.com/soojjung/personal-color-self-diagnosis</a
-            >
-          </p>
-          <p class="period">Feb 2023 — Aug 2024, Jul 2026</p>
-          <ul class="description">
-            <li>
-              Engineered a
-              <strong>9-stage algorithm using 36 curated chips</strong>
-              with a bonus round re-evaluating the top 4 candidates to resolve
-              ties, ensuring a 100% diagnosis rate.
-            </li>
-            <li>
-              Scaled the platform to
-              <strong>84,000+ diagnoses</strong> and 27,600+ AAU while
-              maintaining a <strong>91.5% completion rate</strong> through an
-              intuitive UI/UX.
-            </li>
-            <li>
-              Shipped an optional
-              <strong>AI color recommendation</strong> feature using
-              <strong>OpenAI GPT-4o Vision</strong> with
-              <strong>hybrid model routing</strong> (gpt-4o-mini &rarr; gpt-4o
-              fallback on low confidence), increasing engagement for users
-              who struggle to pick colors on their own.
-            </li>
-            <li>
-              Designed a custom tie-breaker logic and a state management pattern
-              using <strong>Recoil atoms</strong> with localStorage persistence
-              to handle complex diagnostic flows.
-            </li>
-            <li>
-              Achieved <strong>83% organic traffic</strong> (30,000+ sessions)
-              by ranking on the first page of Google for keywords through
-              targeted SEO and SSR optimization.
-            </li>
-          </ul>
-          <div class="project-tech">
-            <span>TypeScript</span>
-            <span>React</span>
-            <span>Next.js</span>
-            <span>Recoil</span>
-            <span>Styled-components</span>
-            <span>Firebase</span>
-            <span>OpenAI GPT-4o</span>
           </div>
         </div>
       </section>

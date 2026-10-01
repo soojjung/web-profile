@@ -127,7 +127,6 @@
             <h3>Real-time &amp; Data Interfaces</h3>
             <div class="skill-tags">
               <span class="skill-tag">SSE</span>
-              <span class="skill-tag">Whisper</span>
               <span class="skill-tag">Streaming UI</span>
               <span class="skill-tag">Dashboard UI</span>
               <span class="skill-tag">API-driven workflows</span>
@@ -195,10 +194,10 @@
               onboarding.
             </li>
             <li>
-              Integrated a low-latency (&lt;500ms) streaming infrastructure
-              using <strong>SSE (Server-Sent Events)</strong> and
-              <strong>OpenAI Whisper</strong> to deliver real-time, interactive
-              chatbot reports.
+              Built the <strong>SSE streaming chatbot UI</strong> &mdash;
+              token-by-token rendering with a typing delay, input locking while
+              answers stream, and report glossary terms that open chatbot
+              explanations.
             </li>
             <li>
               Engineered a <strong>4-tier data persistence strategy</strong>
@@ -207,9 +206,10 @@
               onboarding.
             </li>
             <li>
-              Eliminated data type mismatches in AI-model communication by
-              implementing <strong>Zod superRefine</strong> for cross-field
-              validation, significantly enhancing system-wide data integrity.
+              Implemented <strong>financial-info form validation</strong> with
+              Zod and React Hook Form, using <code>superRefine</code> for
+              cross-field rules (e.g., tenure &le; age, savings &le; monthly
+              income).
             </li>
             <li>
               Spearheaded a data-driven product pivot using
@@ -282,7 +282,9 @@
         <div class="timeline-item">
           <h3>AI Wellness App for Women's Health (dwee)</h3>
           <p class="project-link">
-            <a href="https://github.com/soojjung/dwee-wellness-tracker" target="_blank"
+            <a
+              href="https://github.com/soojjung/dwee-wellness-tracker"
+              target="_blank"
               >github.com/soojjung/dwee-wellness-tracker</a
             >
           </p>
@@ -355,7 +357,9 @@
           <p class="project-link">
             <a href="https://bbumate.com" target="_blank">bbumate.com</a>
             <span class="dot">·</span>
-            <a href="https://github.com/soojjung/bbumate-policy-chat" target="_blank"
+            <a
+              href="https://github.com/soojjung/bbumate-policy-chat"
+              target="_blank"
               >github.com/soojjung/bbumate-policy-chat</a
             >
           </p>
@@ -467,8 +471,8 @@
               <strong>AI color recommendation</strong> feature using
               <strong>OpenAI GPT-4o Vision</strong> with
               <strong>hybrid model routing</strong> (gpt-4o-mini &rarr; gpt-4o
-              fallback on low confidence), increasing engagement for users
-              who struggle to pick colors on their own.
+              fallback on low confidence), increasing engagement for users who
+              struggle to pick colors on their own.
             </li>
             <li>
               Designed a custom tie-breaker logic and a state management pattern

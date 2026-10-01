@@ -30,6 +30,8 @@ body {
 .cv-container {
   max-width: 800px;
   margin: 0 auto;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .cv-top-bar {
@@ -235,16 +237,17 @@ html[lang="ko"] .cv-section-experience .description li.parent-item {
 }
 
 /* Skills */
+/* Grid keeps every row's tags starting at the same x, sized to the widest label */
 .skills-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.6rem;
+  row-gap: 0.75rem;
+  align-items: center;
 }
 
 .skill-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  display: contents;
 }
 
 .skill-row h3 {
@@ -418,7 +421,7 @@ html[lang="ko"] .cv-section-experience .description li.parent-item {
 
   /* Skills */
   .skills-list {
-    gap: 0.25rem;
+    row-gap: 0.25rem;
   }
 
   .skill-row h3 {
@@ -482,7 +485,7 @@ html[lang="ko"] .cv-section-experience .description li.parent-item {
 
 .pdf-mode .cv-header {
   padding-bottom: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .pdf-mode .cv-header h1 {
@@ -504,12 +507,15 @@ html[lang="ko"] .cv-section-experience .description li.parent-item {
 }
 
 .pdf-mode .cv-section {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
-.pdf-mode .cv-section-projects,
 .pdf-mode .cv-section-projects ~ .cv-section {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+}
+
+.pdf-mode .cv-section-projects {
+  margin-bottom: 66px;
 }
 
 .pdf-mode .cv-section h2 {
@@ -545,15 +551,28 @@ html[lang="ko"] .pdf-mode .cv-section-education {
   line-height: 2;
 }
 
+/* In PDF the left rule is drawn as a pseudo-element starting a few px below the item top,
+   so the 1px slice html2pdf leaks onto the previous page at a break stays blank */
 .pdf-mode .timeline-item {
-  padding-left: 14px;
+  padding-left: 16px;
   margin-bottom: 14px;
+  border-left: none;
+}
+
+.pdf-mode .timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--accent);
 }
 
 .pdf-mode .timeline-item::before {
   width: 8px;
   height: 8px;
-  left: -5px;
+  left: -3px;
   top: 6px;
 }
 
@@ -576,12 +595,12 @@ html[lang="ko"] .pdf-mode .cv-section-education {
 }
 
 .pdf-mode .timeline-item .description li {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   margin-left: 12px;
 }
 
 .pdf-mode .skills-list {
-  gap: 12px;
+  row-gap: 12px;
 }
 
 .pdf-mode .skill-row h3 {
@@ -600,7 +619,7 @@ html[lang="ko"] .pdf-mode .cv-section-education {
 }
 
 .pdf-mode .cv-section-projects .timeline-item {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .pdf-mode .cv-section-projects .timeline-item h3 {
@@ -660,9 +679,20 @@ html[lang="ko"] .pdf-mode .cv-section-education {
     display: none;
   }
 
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+  }
+
   .skill-row {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.4rem;
   }
+}
+
+/* Keep a word glued to a closing parenthesis (keep-all still breaks after ")") */
+.nowrap {
+  white-space: nowrap;
 }

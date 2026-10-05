@@ -1,3 +1,4 @@
 - [Soojin Jung Candidate Profile](user_soojin_profile.md) — 3yr frontend engineer, NYU M.S. AI Robotics (Sep 2026), targeting US SWE internships in AI platform/fullstack
 - [Resume Reviews Jun & Jul 2026](project_resume_review_jun2026.md) — Korean domestic review (Jun) + English US internship review (Jul), scores, issues, ROI actions
 - [Resume Patterns — Korean→US Market](reference_resume_patterns.md) — Self-deprecation, metric inflation, gap signals, ATS vocab, US intern-specific patterns observed Jul 2026
+- [Kurly FE Review Oct 2026](project_resume_review_kurly_oct2026.md) — KO CV final check for 핀테크 FE 결제, scores 78/76, remaining fixes

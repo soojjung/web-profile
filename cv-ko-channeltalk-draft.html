@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="정수진 이력서" />
+    <meta property="og:description" content="Soojin Jung Resume" />
+    <title>정수진 이력서</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="alternate" hreflang="en" href="cv.html" />
+    <link rel="alternate" hreflang="ko" href="cv-ko.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/cv.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="cv-container">
+      <div class="cv-top-bar">
+        <a class="back-link" href="index.html">&larr; 프로필로 돌아가기</a>
+        <div class="top-bar-actions">
+          <a
+            class="btn-pill btn-link"
+            href="portfolio.html"
+            aria-label="포트폴리오로 이동"
+          >
+            포트폴리오 &rarr;
+          </a>
+          <button
+            class="btn-pill"
+            onclick="downloadPdf()"
+            aria-label="Download PDF"
+          >
+            PDF &darr;
+          </button>
+          <a class="btn-pill" href="cv.html" aria-label="View English version"
+            >EN</a
+          >
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="cv-header">
+        <h1>정수진</h1>
+        <p class="title">프론트엔드 개발자 · 대화형 UI · 디자인 시스템 · 개발 생산성</p>
+        <div class="contact">
+          <span>sojjung3@gmail.com</span>
+          <span class="dot">·</span>
+          <span>010-3724-6480</span>
+          <span class="dot">·</span>
+          <a href="https://github.com/soojjung" target="_blank"
+            >github.com/soojjung</a
+          >
+          <span class="dot">·</span>
+          <a href="https://medium.com/@sojjung3" target="_blank"
+            >medium.com/@sojjung3</a
+          >
+        </div>
+      </header>
+
+      <!-- About -->
+      <section class="cv-section cv-section-about">
+        <h2>소개</h2>
+        <p class="about-text">
+          핀테크 기업 두 곳에서 3년간 React·JavaScript 기반 프론트엔드를 개발해
+          왔습니다. aiZENGlobal에서는 고객·사내 운영·금융 파트너용 3개 포탈을
+          설계·배포하고 50개 이상 재사용 UI 컴포넌트(디자인 시스템)와 PR 리뷰
+          프로세스·코드 컨벤션을 도입했으며, BeHappy에서는 SSE 스트리밍 챗봇 UI를
+          구현했습니다.<br />2025년부터는 백엔드·AI와 피지컬 AI 로봇 부트캠프를 수료하고
+          직접 만든 서비스를 운영하고 있습니다. 웹 서비스는 누적 85,000회 진단을
+          기록했고 App Store에는 앱 2개를 출시했으며, Sentry 장애 모니터링과
+          접근성 대응을 적용했습니다. 또한 Claude Code에 역할별 서브에이전트와 /commit
+          품질 게이트를 구성하고, 단위 테스트와 Playwright 시각 테스트로 AI가
+          만든 변경을 검증하고 있습니다.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section class="cv-section cv-section-skills">
+        <h2>기술 스택</h2>
+        <div class="skills-list">
+          <div class="skill-row">
+            <h3>프론트엔드</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">SSE 스트리밍 UI</span>
+              <span class="skill-tag">디자인 시스템</span>
+              <span class="skill-tag">TanStack Query</span>
+              <span class="skill-tag">Zustand</span>
+              <span class="skill-tag">Recoil</span>
+              <span class="skill-tag">접근성 (ARIA)</span>
+              <span class="skill-tag">Zod</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Capacitor</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>테스트 &amp; 운영</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Vitest</span>
+              <span class="skill-tag">Playwright</span>
+              <span class="skill-tag">Sentry</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">AWS S3/CloudFront</span>
+              <span class="skill-tag">GA4</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>AI 활용 개발</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Claude Code</span>
+              <span class="skill-tag">서브에이전트</span>
+              <span class="skill-tag">/commit 품질 게이트</span>
+              <span class="skill-tag">AI 컨텍스트(.ai/)</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>백엔드 (프로젝트)</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Supabase</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>언어</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">한국어 (Native)</span>
+              <span class="skill-tag">영어 (Fluent)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="cv-section cv-section-experience">
+        <h2>경력 (3년)</h2>
+
+        <div class="timeline-item">
+          <h3>프론트엔드 개발자</h3>
+          <p class="company">
+            BeHappy <span class="company-desc">· 신혼부부 맞춤 재무 로드맵 AI 서비스</span>
+          </p>
+          <p class="period">2024년 10월 — 2025년 5월 (8개월 - 서비스 종료)</p>
+          <ul class="description">
+            <li>
+              <strong>SSE 스트리밍 챗봇 UI</strong> 구현 — 토큰 누적 렌더링·타이핑 딜레이, 답변 중 입력 차단, 리포트 용어 클릭 시 챗봇 설명 연동
+            </li>
+            <li>
+              결제 전 이탈 단계와 실제 사용자층을 파악해 다음 기획에 반영하려 GA4/Mixpanel로 결제 완료까지 단계별 이벤트 추적, <strong>60대 이상 사용자</strong>·<strong>95% 모바일 접속</strong> 패턴 발견
+            </li>
+            <li>
+              재무 리포트를 포함한 유료 재무 챗봇 상담의 <strong>Toss Payments SDK 결제·환불 플로우</strong> 구현, 결제 중 이탈·재진입·뒤로가기 등 엣지 케이스 처리
+            </li>
+            <li>
+              GitHub Actions 기반 S3/CloudFront <strong>자동 배포 파이프라인</strong> 구축, PR 머지 자동 배포로 환경 변수 누락 오류 제거
+            </li>
+            <li>
+              Chart.js 기반 소득·부채·DSR·은퇴 등 <strong>재무 리포트 30여 종</strong> 시각화
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>React 18</span>
+            <span>Toss Payments SDK</span>
+            <span>Recoil</span>
+            <span>Chart.js</span>
+            <span>Zod</span>
+            <span>Tailwind CSS</span>
+            <span>GitHub Actions</span>
+            <span>GA4</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>프론트엔드 개발자</h3>
+          <p class="company">
+            aiZENGlobal <span class="company-desc">· 이커머스 셀러 매출채권 담보 대출 중개 플랫폼</span>
+          </p>
+          <p class="period">2022년 3월 — 2024년 6월 (2년 4개월)</p>
+          <ul class="description">
+            <li>
+              디자이너 부재로 흐트러진 UI 일관성을
+              <strong>50개 이상 재사용 UI 컴포넌트</strong>(디자인 시스템)로
+              정리, SearchTable 공통 모듈로 30+ 페이지
+              <strong>개발 시간 50% 단축</strong>(최초 일정 추정치 대비)
+            </li>
+            <li>
+              팀 확장 뒤 반복된 릴리스 직후 버그와 개발자별로 달랐던 코드 스타일
+              문제를 PR 리뷰 프로세스 도입과 코드 컨벤션 제안으로 해결,
+              <strong>릴리스 후 버그 40% 감소</strong>(JIRA 이슈
+              기준)·<strong>리팩토링 시간 30% 절감</strong>(최초 일정 추정치 대비)
+            </li>
+            <li>
+              고객·사내 운영·금융 파트너용
+              <strong>3개 포탈을 처음부터 설계·배포</strong>, 고객 포탈(KB국민은행
+              대출 매칭 플랫폼)에서 <strong>대출 신청 전환율 34%</strong>(가입자
+              대비 대출 신청) 달성
+            </li>
+            <li>
+              역할별 화면·메뉴·버튼 접근을 제어하는
+              <strong>3계층 권한 관리 시스템</strong>을 구현해 설정만으로 역할
+              확장 가능
+            </li>
+            <li>
+              <strong>Request Queue 패턴 기반 JWT 자동 갱신</strong>으로 토큰
+              만료 시 동시 요청 실패·세션 끊김 방지
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>React 18</span>
+            <span>Context API</span>
+            <span>Styled-components</span>
+            <span>Ant Design</span>
+            <span>Axios</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="cv-section cv-section-projects">
+        <h2>프로젝트</h2>
+
+        <div class="timeline-item">
+          <h3>가챠샵 지도 서비스</h3>
+          <p class="project-link">
+            <a href="https://apps.apple.com/kr/app/id6759491099" target="_blank"
+              >apps.apple.com/kr/app/id6759491099</a
+            >
+            <span class="dot">·</span>
+            <a href="https://github.com/soojjung/GOTCHA-FE" target="_blank"
+              >github.com/soojjung/GOTCHA-FE</a
+            >
+          </p>
+          <p class="period">2026년 1월 — 2026년 4월</p>
+          <ul class="description">
+            <li>
+              아키텍처·코딩 표준 문서를 <strong>AI 컨텍스트(.ai/)</strong>로
+              관리해 팀 컨벤션 일관성 확보, AI를 설계 검토에 활용
+            </li>
+            <li>
+              Container/Presenter 패턴 3계층 아키텍처와 21개 API 훅에
+              <strong>하이브리드 상태 관리</strong>(TanStack Query + Zustand)
+              적용
+            </li>
+            <li>
+              <strong>지도 API 호출 최적화</strong> — 뷰포트 기반 조회와
+              &lsquo;이 지역 재검색&rsquo; 버튼으로 이동 중 자동 재조회 제거,
+              축소 시 클러스터 API 전환, Capacitor 기반 iOS 앱으로
+              <strong>App Store 출시</strong>
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 19</span>
+            <span>Next.js 16</span>
+            <span>Zustand</span>
+            <span>TanStack Query</span>
+            <span>Capacitor</span>
+            <span>Sentry</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>여성 웰니스 다이어리</h3>
+          <p class="project-link">
+            <a href="https://dwee-neon.vercel.app" target="_blank"
+              >dwee-neon.vercel.app</a
+            >
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/dwee-wellness-tracker"
+              target="_blank"
+              >github.com/soojjung/dwee-wellness-tracker</a
+            >
+          </p>
+          <p class="period">2026년 5월 — 현재</p>
+          <ul class="description">
+            <li>
+              Claude Code에 역할별 서브에이전트·도메인 규칙과
+              <strong>/commit 품질 게이트</strong>(lint&rarr;테스트&rarr;문서
+              동기화&rarr;PR) 구성
+            </li>
+            <li>
+              주기 예측 로직을 순수 함수로 분리해
+              <strong>단위 테스트 724개</strong>로 검증, Playwright 시각
+              테스트로 리팩토링 <strong>회귀 4건 사전 차단</strong>
+            </li>
+            <li>
+              모달 공통 훅·규칙, ARIA 역할/상태, focus-visible, aria-live
+              적용으로
+              <strong>키보드·스크린리더 접근성</strong> 대응
+            </li>
+            <li>
+              Repository/Adapter 패턴 기반
+              <strong>로컬 우선 아키텍처</strong> 설계 — IndexedDB 오프라인
+              저장, 로그인 시 클라우드 이전
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 19</span>
+            <span>Next.js 15</span>
+            <span>Zustand</span>
+            <span>IndexedDB</span>
+            <span>Supabase</span>
+            <span>Vitest</span>
+            <span>Playwright</span>
+            <span>Sentry</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>퍼스널 컬러 자가진단 서비스</h3>
+          <p class="project-link">
+            <a href="https://omct.web.app" target="_blank"
+              >https://omct.web.app</a
+            >
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/personal-color-self-diagnosis"
+              target="_blank"
+              >github.com/soojjung/personal-color-self-diagnosis</a
+            >
+          </p>
+          <p class="period">
+            2023년 2월 — 2024년 8월 · 2026년 7월 AI 기능 추가
+          </p>
+          <ul class="description">
+            <li>
+              <strong>85,000회 이상 진단</strong> 및 2025년 연간 활성
+              사용자(AAU) 27,600명 이상 (GA4 기준),
+              <strong>91.5% 완료율</strong> 기록
+            </li>
+            <li>
+              36개 선별 칩과 보너스 라운드 재평가를 활용한
+              <strong>9단계 알고리즘</strong> 설계
+            </li>
+            <li>
+              SSR·SEO 최적화로 &ldquo;퍼스널컬러 테스트&rdquo;
+              <strong>구글 첫 페이지 노출</strong>, 유입의
+              <strong>83%를 자연 검색</strong>으로 확보
+            </li>
+            <li>
+              <strong>GPT-4o Vision 기반 AI 색상 추천</strong> 추가, gpt-4o-mini
+              &rarr; gpt-4o <strong>폴백 라우팅</strong>으로 비용·정확도 균형
+              확보, 혼자 색을 고르기 어려운 유저의 진단 참여도 향상
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 18</span>
+            <span>Next.js 14</span>
+            <span>Recoil</span>
+            <span>Styled-components</span>
+            <span>Firebase</span>
+            <span>OpenAI GPT-4o</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>단어의 신 GRE</h3>
+          <p class="project-link">
+            <a href="https://apps.apple.com/app/id6758345755" target="_blank"
+              >apps.apple.com/app/id6758345755</a
+            >
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/gre-vocab-master"
+              target="_blank"
+              >github.com/soojjung/gre-vocab-master</a
+            >
+          </p>
+          <p class="period">2026년 1월 — 현재</p>
+          <ul class="description">
+            <li>
+              Capacitor(WebView 하이브리드) 앱 <strong>웹·iOS 동시 출시</strong>,
+              Supabase 자동 일시정지를 50일간 인지하지 못한 인시던트 후
+              <strong>Sentry 웹/iOS 통합</strong>, 신규 크래시
+              <strong>3일 내 인지·수정</strong>
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 19</span>
+            <span>Capacitor</span>
+            <span>Supabase</span>
+            <span>Sentry</span>
+            <span>Tailwind CSS</span>
+            <span>Vite</span>
+            <span>PWA</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="cv-section cv-section-education">
+        <h2>교육</h2>
+
+        <div class="timeline-item">
+          <h3>응용수학 및 통계학 &amp; 경제학 학사</h3>
+          <p class="company">스토니브룩, 뉴욕주립대학교 — GPA 4.0 / 4.5</p>
+          <p class="period">2018년 12월 졸업</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>백엔드 &amp; AI 엔지니어링 부트캠프</h3>
+          <p class="company">패스트캠퍼스 커널 아카데미 K-Digital Training</p>
+          <p class="period">2025년 6월 — 2025년 12월</p>
+          <ul class="description">
+            <li>
+              Java/Spring Boot 백엔드 개발, 자료구조 &amp; 알고리즘,
+              데이터베이스, OS &amp; 네트워크 (196h)
+            </li>
+            <li>
+              AI &amp; 머신러닝: Python 기반 ML 워크플로우, NLP 기초,
+              Transformer 기반 LLM (BERT, GPT) (34h)
+            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>피지컬 AI 로봇 부트캠프</h3>
+          <p class="company">패스트캠퍼스 커널 아카데미 K-Digital Training</p>
+          <p class="period">2026년 6월 — 2026년 8월</p>
+        </div>
+      </section>
+
+      <!-- Additional -->
+      <section class="cv-section cv-section-additional">
+        <h2>기타 활동</h2>
+        <ul class="additional-list">
+          <li>
+            Data Structures — University of California San Diego (Coursera,
+            2026년)
+          </li>
+          <li>Google Analytics 자격증 (GA4, 2026년)</li>
+        </ul>
+      </section>
+    </div>
+
+    <script>
+      function downloadPdf() {
+        var container = document.querySelector(".cv-container");
+        document.body.classList.add("pdf-mode");
+        container.querySelectorAll("a").forEach(function (a) {
+          a.style.color = "#1a1a1a";
+        });
+
+        requestAnimationFrame(function () {
+          html2pdf()
+            .set({
+              margin: [14, 12, 10, 12.6],
+              filename: "정수진 이력서.pdf",
+              image: { type: "jpeg", quality: 0.98 },
+              html2canvas: {
+                scale: 2,
+                useCORS: true,
+                scrollX: 0,
+                scrollY: 0,
+                windowWidth: container.scrollWidth,
+              },
+              jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+              pagebreak: { mode: "css" },
+            })
+            .from(container)
+            .save()
+            .then(function () {
+              document.body.classList.remove("pdf-mode");
+              container.querySelectorAll("a").forEach(function (a) {
+                a.style.color = "";
+              });
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

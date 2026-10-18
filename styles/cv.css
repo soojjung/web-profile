@@ -547,6 +547,11 @@ html[lang="ko"] .cv-section-experience .description li.parent-item {
   margin-bottom: 66px;
 }
 
+/* No trailing margin after the last section, or html2pdf adds an empty last page */
+.pdf-mode .cv-section:last-child {
+  margin-bottom: 0;
+}
+
 .pdf-mode .cv-section h2 {
   font-size: 14.5px;
   padding-bottom: 4px;

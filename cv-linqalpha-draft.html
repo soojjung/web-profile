@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soojin Jung — CV</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="alternate" hreflang="en" href="cv.html" />
+    <link rel="alternate" hreflang="ko" href="cv-ko.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/cv.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="cv-container">
+      <div class="cv-top-bar">
+        <a class="back-link" href="index.html">&larr; Back to profile</a>
+        <div class="top-bar-actions">
+          <button
+            class="btn-pill"
+            onclick="downloadPdf()"
+            aria-label="Download PDF"
+          >
+            PDF &darr;
+          </button>
+          <a
+            class="btn-pill"
+            href="cv-ko.html"
+            aria-label="View Korean version"
+          >
+            KO
+          </a>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="cv-header">
+        <h1>Soojin Jung</h1>
+        <p class="title">AI Product Engineer · RAG, Streaming &amp; Financial Interfaces</p>
+        <div class="contact">
+          <span>sojjung3@gmail.com</span>
+          <span class="dot">·</span>
+          <a href="https://www.linkedin.com/in/soo-jin-jung" target="_blank"
+            >linkedin.com/in/soo-jin-jung</a
+          >
+          <span class="dot">·</span>
+          <a href="https://github.com/soojjung" target="_blank"
+            >github.com/soojjung</a
+          >
+          <span class="dot">·</span>
+
+          <a href="https://medium.com/@sojjung3" target="_blank"
+            >medium.com/@sojjung3</a
+          >
+        </div>
+      </header>
+
+
+      <!-- Summary -->
+      <section class="cv-section cv-section-about">
+        <h2>Summary</h2>
+        <p class="about-text">
+          Software engineer with 3 years building React-based
+          <strong>financial services</strong> at two
+          <strong>fintech</strong> companies, including a KB Kookmin Bank
+          loan-matching platform. I built a
+          <strong>RAG pipeline in Python/FastAPI</strong> with LangChain and
+          ChromaDB where every answer links to its official source, an
+          <strong>SSE streaming chatbot UI</strong> for an AI financial roadmap
+          service, and <strong>GPT-4o Vision</strong> recommendations with model
+          fallback routing.
+        </p>
+        <p class="about-text" style="margin-top: 10px">
+          B.Sc. in Applied Mathematics and Statistics &amp; Economics (Stony
+          Brook, SUNY). Completed a backend &amp; AI engineering bootcamp and a
+          physical AI robotics bootcamp. Fluent in English and Korean.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section class="cv-section cv-section-education">
+        <h2>Education</h2>
+
+        <div class="timeline-item">
+          <h3>BSc. in Applied Mathematics and Statistics &amp; Economics</h3>
+          <p class="company">
+            Stony Brook, State University of New York — GPA 3.57 / 4.0
+          </p>
+          <p class="period">Graduated Dec 2018</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="cv-section cv-section-skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill-row">
+            <h3>AI &amp; Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">RAG Pipelines</span>
+              <span class="skill-tag">ChromaDB</span>
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Supabase</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Streaming &amp; Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">SSE Streaming UI</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TanStack Query</span>
+              <span class="skill-tag">Zustand</span>
+              <span class="skill-tag">Recoil</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Toss Payments SDK</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Tools &amp; Operations</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Claude Code</span>
+              <span class="skill-tag">Sentry</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">AWS S3/CloudFront</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Playwright</span>
+              <span class="skill-tag">Vitest</span>
+              <span class="skill-tag">GA4</span>
+              <span class="skill-tag">Mixpanel</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">English (Fluent)</span>
+              <span class="skill-tag">Korean (Native)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="cv-section cv-section-experience">
+        <h2>Work Experience (3 yrs)</h2>
+
+        <div class="timeline-item">
+          <h3>Frontend Developer</h3>
+          <p class="company">
+            BeHappy <span class="company-desc">· AI financial roadmap service for newlyweds</span>
+          </p>
+          <p class="period">Oct 2024 — May 2025 (8 months - service discontinued)</p>
+
+          <ul class="description">
+            <li>
+              Built the <strong>SSE streaming chatbot UI</strong> &mdash;
+              token-by-token rendering with a typing delay, input locking while
+              answers stream, and report terms that open chatbot explanations.
+            </li>
+            <li>
+              Tracked each step up to payment completion with GA4 / Mixpanel to
+              find drop-off points and the actual user base for future planning,
+              revealing <strong>a 60+ user segment</strong> and
+              <strong>95% mobile access</strong>.
+            </li>
+            <li>
+              Visualized <strong>30+ financial reports</strong> with Chart.js,
+              covering income, debt, DSR, retirement, and more.
+            </li>
+            <li>
+              Implemented the
+              <strong>Toss Payments SDK payment and refund flow</strong> for paid
+              financial chatbot consultations with reports, handling edge cases
+              such as mid-payment exits, re-entry, and back navigation.
+            </li>
+            <li>
+              Built an <strong>automated deployment pipeline</strong> to
+              S3/CloudFront with GitHub Actions, deploying on PR merge and
+              eliminating missing environment variable errors.
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>React 18</span>
+            <span>Toss Payments SDK</span>
+            <span>Recoil</span>
+            <span>Chart.js</span>
+            <span>Zod</span>
+            <span>Tailwind CSS</span>
+            <span>GitHub Actions</span>
+            <span>GA4</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Frontend Developer</h3>
+          <p class="company">
+            aiZENGlobal <span class="company-desc">· Receivables-backed loan brokerage for e-commerce sellers</span>
+          </p>
+          <p class="period">Mar 2022 — Jun 2024 (2 years 4 months)</p>
+
+          <ul class="description">
+            <li>
+              Architected and deployed a
+              <strong>tri-portal ecosystem from the ground up</strong> for
+              customers, internal operations, and financial partners, reaching a
+              <strong>34% loan application conversion rate</strong> (sign-ups to
+              applications) on the customer portal (KB Kookmin Bank
+              loan-matching platform).
+            </li>
+            <li>
+              Built
+              <strong>JWT auto-renewal with a Request Queue pattern</strong>,
+              preventing concurrent request failures and session drops on token
+              expiry.
+            </li>
+            <li>
+              Implemented <strong>financial-grade security</strong>: secondary
+              identity verification, auth route guards, a 5-minute lockout after
+              10 failed logins, and DOMPurify-based XSS protection.
+            </li>
+            <li>
+              Implemented a <strong>three-tier permission system</strong>
+              controlling screen, menu, and button access by role, extensible
+              through configuration alone.
+            </li>
+            <li>
+              Built a design system of
+              <strong>50+ reusable UI components</strong> to restore UI
+              consistency without a designer, and cut
+              <strong>development time by 50%</strong> across 30+ pages with a
+              shared SearchTable module (against original schedule estimates).
+            </li>
+            <li>
+              Introduced a PR review process and code conventions as the team
+              grew, cutting <strong>post-release bugs by 40%</strong> (JIRA
+              issues) and <strong>refactoring time by 30%</strong> (against original
+              schedule estimates).
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>React 18</span>
+            <span>Context API</span>
+            <span>Styled-components</span>
+            <span>Ant Design</span>
+            <span>Axios</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Projects -->
+      <section class="cv-section cv-section-projects">
+        <h2>Selected Projects</h2>
+
+        <div class="timeline-item">
+          <h3>AI Policy Assistant for Newlyweds (bbumate) · RAG, Full Stack</h3>
+          <p class="project-link">
+            <a href="https://bbumate.com" target="_blank">bbumate.com</a>
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/bbumate-policy-chat"
+              target="_blank"
+              >github.com/soojjung/bbumate-policy-chat</a
+            >
+            <span class="dot">·</span>
+            <a href="https://github.com/soojjung/bbumate-fe" target="_blank"
+              >github.com/soojjung/bbumate-fe</a
+            >
+          </p>
+          <p class="period">Oct 2025 — Dec 2025</p>
+          <ul class="description">
+            <li>
+              Architected an <strong>end-to-end RAG pipeline</strong> using
+              LangChain (LCEL) and ChromaDB, centralizing 113+ fragmented
+              policies into a high-dimensional (4,096-dim) vector store.
+            </li>
+            <li>
+              Achieved a <strong>66% reduction in system latency</strong> by
+              implementing parallel document grading, reducing complex task
+              processing times from 4.2s to 1.4s.
+            </li>
+            <li>
+              Engineered a
+              <strong
+                >fallback strategy (RAG &rarr; Query Re-write &rarr; Web
+                Search)</strong
+              >
+              using the Tavily API, so questions outside the indexed data still get
+              an answer through web search.
+            </li>
+            <li>
+              Developed a <strong>high-reliability grounding system</strong>
+              with 97+ URL mappings, so <strong>every answer links to its
+              official source</strong>.
+            </li>
+            <li>
+              Built the chat frontend in <strong>React and TypeScript</strong>,
+              connecting it to the FastAPI query API and showing each
+              answer's sources as clickable links.
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>LangChain</span>
+            <span>ChromaDB</span>
+            <span>React</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Personal Color Self-Diagnosis Service</h3>
+          <p class="project-link">
+            <a href="https://omct.web.app" target="_blank">omct.web.app</a>
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/personal-color-self-diagnosis"
+              target="_blank"
+              >github.com/soojjung/personal-color-self-diagnosis</a
+            >
+          </p>
+          <p class="period">Feb 2023 — Aug 2024 · AI feature added Jul 2026</p>
+          <ul class="description">
+            <li>
+              Added <strong>GPT-4o Vision color recommendations</strong> for
+              users unsure of their picks, balancing cost and accuracy with
+              gpt-4o-mini &rarr; gpt-4o <strong>fallback routing</strong>.
+            </li>
+            <li>
+              Recorded <strong>85,000+ diagnoses</strong> and 27,600+ annual
+              active users (AAU) in 2025 (GA4), with a
+              <strong>91.5% completion rate</strong>.
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 18</span>
+            <span>Next.js 14</span>
+            <span>Recoil</span>
+            <span>Styled-components</span>
+            <span>Firebase</span>
+            <span>OpenAI GPT-4o</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>AI Wellness App for Women's Health (dwee)</h3>
+          <p class="project-link">
+            <a href="https://dwee-neon.vercel.app" target="_blank"
+              >dwee-neon.vercel.app</a
+            >
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/dwee-wellness-tracker"
+              target="_blank"
+              >github.com/soojjung/dwee-wellness-tracker</a
+            >
+          </p>
+          <p class="period">May 2026 — Present</p>
+          <ul class="description">
+            <li>
+              Configured Claude Code with role-specific sub-agents, domain rules,
+              and a <strong>/commit quality gate</strong> (lint &rarr; tests
+              &rarr; docs sync &rarr; PR).
+            </li>
+            <li>
+              Verified cycle prediction logic as pure functions with
+              <strong>724 unit tests</strong>, and caught
+              <strong>4 refactoring regressions</strong> with Playwright visual
+              tests.
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 19</span>
+            <span>Next.js 15</span>
+            <span>Zustand</span>
+            <span>IndexedDB</span>
+            <span>Supabase</span>
+            <span>Vitest</span>
+            <span>Playwright</span>
+            <span>Sentry</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Hospital Guidance &amp; Dispensing Robot Control System</h3>
+          <p class="project-link">
+            <a href="https://mingkycarepro.site/medical" target="_blank"
+              >mingkycarepro.site/medical</a
+            >
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/finalproject3fastcamp/mingky_care_pro"
+              target="_blank"
+              >github.com/finalproject3fastcamp/mingky_care_pro</a
+            >
+          </p>
+          <p class="period">Aug 2026 · 6-person team project</p>
+          <ul class="description">
+            <li>
+              Built the <strong>clinician dashboard</strong>, deriving each
+              robot's status, destination, and battery from session events, and
+              implemented the QR patient check-in flow (ROS2 node &rarr; FastAPI
+              &rarr; guidance session).
+            </li>
+            <li>
+              Cut wireless bandwidth for robot camera previews from
+              <strong>13.1 &rarr; 1.1 Mbps</strong> by sending only new frames
+              at 640px, removing multi-second lag.
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 19</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>ROS2</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional -->
+      <section class="cv-section cv-section-additional">
+        <h2>Additional</h2>
+        <ul class="additional-list">
+          <li>
+            FastCampus K-Digital Training — Backend &amp; AI Engineering (Jun
+            2025 — Dec 2025)
+            <ul class="additional-sublist">
+              <li>Java/Spring Boot backend, data structures &amp; algorithms, databases, and OS &amp; networking</li>
+              <li>Python ML/NLP and Transformer-based LLMs</li>
+            </ul>
+          </li>
+          <li>
+            FastCampus K-Digital Training — Physical AI Robotics (Jun 2026 —
+            Aug 2026)
+            <ul class="additional-sublist">
+              <li>ROS2, SLAM/Nav2 autonomous navigation, and Isaac Sim/Lab</li>
+              <li>YOLO object detection, and LeRobot imitation learning with robot arm control</li>
+            </ul>
+          </li>
+          <li>
+            Hanghae Plus — Frontend, 2nd Cohort (Jun 2024 — Aug 2024)
+            <ul class="additional-sublist">
+              <li>React core, clean code, CI/CD, test code, and performance optimization</li>
+            </ul>
+          </li>
+          <li>Google Analytics Certification (GA4, 2026)</li>
+        </ul>
+      </section>
+    </div>
+
+    <script>
+      function downloadPdf() {
+        var container = document.querySelector(".cv-container");
+        document.body.classList.add("pdf-mode");
+        container.querySelectorAll("a").forEach(function (a) {
+          a.style.color = "#1a1a1a";
+        });
+
+        requestAnimationFrame(function () {
+          html2pdf()
+            .set({
+              margin: [10, 12, 10, 12],
+              filename: "Soojin Jung CV.pdf",
+              image: { type: "jpeg", quality: 0.98 },
+              html2canvas: {
+                scale: 2,
+                useCORS: true,
+                scrollX: 0,
+                scrollY: 0,
+                windowWidth: container.scrollWidth,
+              },
+              jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+              pagebreak: { mode: "css" },
+            })
+            .from(container)
+            .save()
+            .then(function () {
+              document.body.classList.remove("pdf-mode");
+              container.querySelectorAll("a").forEach(function (a) {
+                a.style.color = "";
+              });
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
